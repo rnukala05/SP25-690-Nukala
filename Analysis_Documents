@@ -1,0 +1,125 @@
+System: ProResume Optimizer – Resume Evaluation and Improvement System
+Rishwanth Nukala
+	
+System Request
+Project Sponsor:	Rishwanth Nukala
+Business Need:	Majority of students are not aware of creating an effective resume. As a result, they keep applying and do not see any noticeable improvement. They either blame the company or their approach but fail to realize that the problem often starts with their resume, which is the first point of evaluation in any job search process.
+While job portals and some websites offer resume services, most of them simply provide a customized resume in return for payment. These solutions act as short fixes, and their long-term sustainability is questionable because they do not teach users what was wrong or what needs improvement.
+On this backdrop, the objective is to develop a ProResume system that not only enhances a resume but also educates the user about what was missing in the older version. The system will generate structured feedback in the form of a report and highlighted bullet-point suggestions directly on the webpage.
+In addition, resumes are often filtered through Applicant Tracking Systems (ATS) before reaching recruiters. Therefore, the system will evaluate resumes against job-specific criteria and provide optimization suggestions that increase the likelihood of passing ATS screening. The system requires the user to specify the target job role because resume effectiveness depends on role alignment. Without knowing the intended position, meaningful evaluation and improvement cannot be performed.
+The platform will be built as a real-time web application with scope to incorporate machine learning components.
+Business Requirements:	Input
+•	User uploads a resume or pastes resume text
+•	Mandatory job role selection
+
+Processing
+•	Resume analysis based on defined evaluation rules and scoring logic
+•	Role-specific keyword and skills matching
+•	Section completeness validation
+•	Detection of missing measurable achievements
+•	Identification of weak phrasing and passive language
+•	ATS compatibility checks
+
+Output
+•	Resume quality score
+•	Highlighted improvement suggestions
+•	Missing section alerts
+•	Role alignment feedback
+•	Structured improvement report
+
+Interface
+•	Responsive UI built using Bootstrap
+•	Resume preview with highlighted feedback
+•	Categorized recommendation panels
+•	Real-time analysis display
+Business Value:	The system provides both immediate and long-term value.
+Immediate value:
+•	Users identify resume gaps before submitting applications
+•	Increased probability of passing ATS filters
+
+Long-term value:
+•	Users learn how to structure resumes effectively
+•	Reduced dependency on paid resume rewriting services
+•	Improved job application outcomes
+
+The platform functions as a decision-support and educational system rather than a replacement writing service.
+Special Issues or Constraints:	•	Resume analysis accuracy depends on rule design and validation logic
+•	Results guide improvement but do not guarantee job placement
+•	Resume data must be handled securely and not stored permanently
+•	System must remain simple, responsive, and easy to interpret
+•	Overly complex evaluation logic may reduce usability
+•	Scope must remain achievable within the project timeline
+
+
+
+
+Requirements Definition 
+1.	Company background
+ProResume Optimizer is a Python-based resume evaluation and improvement system designed to analyze resumes against structured evaluation criteria and role-specific expectations. In most job application processes, the resume serves as the first screening document. However, many students repeatedly apply for positions without understanding why their applications do not progress. The issue often lies in resume quality, clarity, and alignment with the intended job role.
+Existing resume services typically provide rewritten resumes for a fee. These services function as short-term fixes. They do not explain what was structurally weak, what content was missing, or how alignment with the job role could be improved. As a result, users remain dependent on external services rather than learning how to construct effective resumes independently.
+ProResume Optimizer addresses this gap by functioning as both an evaluation and educational system. The system requires the user to specify the target job role before analysis because resume effectiveness depends on contextual alignment. A resume suitable for a data analyst role differs from one intended for a project management position. Without role selection, meaningful evaluation cannot be performed.
+The system applies predefined evaluation rules to assess structural completeness, measurable achievements, role-specific keywords, phrasing strength, and simulated Applicant Tracking System (ATS) compatibility. It then generates a structured report containing a resume quality score, categorized improvement suggestions, highlighted feedback within the resume preview, and alerts for missing sections.
+The platform is implemented entirely in Python. It processes resume data in real time and does not permanently store uploaded content. The system functions as a decision-support and learning tool rather than a replacement resume writing service.
+
+
+
+2.	Actors Identified: 
+The actors identified for this system are:
+•	User – uploads and evaluates resume content.
+•	Administrator – defines and maintains evaluation rules, scoring logic, and keyword libraries.
+
+
+3.	Functional Requirements
+1.	A User uploads a resume file.
+2.	A User pastes resume text into the system.
+3.	A User selects a mandatory target job role before analysis.
+4.	The system validates resume format and content availability.
+5.	The system extracts textual data for evaluation.
+6.	The system verifies presence of required resume sections.
+7.	The system evaluates completeness of each section.
+8.	The system identifies missing sections.
+9.	The system detects absence of measurable achievements within experience entries.
+10.	The system identifies weak phrasing and passive constructions.
+11.	The system retrieves keyword library associated with selected job role.
+12.	The system compares resume content with role-specific keywords.
+13.	The system calculates role alignment score.
+14.	The system identifies missing critical skills relevant to the selected role.
+15.	The system evaluates formatting consistency.
+16.	The system checks keyword density relative to role requirements.
+17.	The system identifies potential ATS filtering risks.
+18.	The system generates ATS compatibility feedback.
+19.	The system computes weighted score for structural quality.
+20.	The system computes weighted score for role alignment.
+21.	The system computes weighted score for ATS compatibility.
+22.	The system calculates overall resume quality score.
+23.	The system generates structured improvement report.
+24.	The system highlights improvement suggestions within resume preview.
+25.	The system categorizes recommendations into defined panels (Structure, Content, ATS, Role Fit).
+26.	A User re-submits modified resume for re-evaluation.
+27.	The system re-runs analysis upon resubmission.
+28.	An Administrator defines scoring weights for evaluation categories.
+29.	An Administrator defines role-specific keyword libraries.
+30.	An Administrator defines measurable achievement detection rules.
+31.	An Administrator defines section validation criteria.
+32.	The system stores updated rule parameters.
+33.	The system applies updated rules in subsequent evaluations.
+
+4.	Non-Functional Requirements
+1.	The system will process resume data securely.
+2.	The system will not permanently store uploaded resume content.
+3.	The system will restrict rule configuration access to Administrator accounts.
+4.	The system will complete resume analysis within acceptable interactive processing time.
+5.	The system will display evaluation results immediately after analysis completion.
+6.	The system will present categorized feedback in a structured and readable format.
+7.	The system will maintain a simple and intuitive interaction flow.
+8.	The system will ensure that scoring logic remains interpretable to users.
+9.	The system will be implemented entirely in Python.
+10.	The system will require mandatory job role selection before evaluation.
+11.	The system will function as a decision-support and educational tool rather than a guarantee of job placement.
+12.	The scope of evaluation logic will remain achievable within the defined project timeline.
+
+
+5.	References
+Dennis, A., Wixom, B. and Tegarden, D. (2020). Systems Analysis and Design: An Object-Oriented Approach with UML. 6th Edition.
+
+
